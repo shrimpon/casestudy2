@@ -16,7 +16,7 @@ void borrowBook();
 void returnBook();
 void sortBooks();
 void saveBooks();
-void loadBooks();s
+void loadBooks();
 
 struct Book
     {
@@ -108,6 +108,9 @@ void menu()
 
             default:
                 cout<<"\nInvalid choice. Try again.\n";
+                cout<<"\nPress ENTER to continue...";
+                cin.ignore();
+                cin.get();
         }
 
     } while (choice != 0);
@@ -147,6 +150,9 @@ void addBook()
     cout<<"\n-----=====-----=====-----=====-----\n";
     cout<<"       BOOK ADDED SUCCESSFULLY!";
     cout<<"\n-----=====-----=====-----=====-----\n";
+    cout<<"\nPress ENTER to continue...";
+    cin.ignore();
+    cin.get();
 }
 
 void viewBooks()
